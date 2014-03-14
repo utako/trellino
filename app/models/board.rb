@@ -12,6 +12,6 @@ class Board < ActiveRecord::Base
   end
 
   def as_json(options = {})
-    super(options.merge(include: :members))
+    super(options.merge(include: [:members, :lists]))
   end
 end
