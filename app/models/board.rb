@@ -22,4 +22,8 @@ class Board < ActiveRecord::Base
   def self.for_member(user)
     joins(:board_assignments).where("board_assignments.user_id = ?", user.id)
   end
+
+  def as_json(options = {})
+    super(options.merge(include: [:members, :lists]))
+  end
 end
