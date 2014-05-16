@@ -35,7 +35,7 @@ Make the show, index, and new page for boards. Next, add lists to the boards. Th
   * Remember to display the lists in order of their rank. You might want to overwrite the `comparator` method of the `cards` collection.
 * When the user creates a board, it should redirect them to the board's show page. You can use the router's `navigate` method for this.
 * Add the ability to create lists, via a new list view.
-* Add the ability to add board members. You should be able to type in a username and the website will add that person, or complain that they don't exist.
+* Add the ability to add board members. You should be able to type in a email and the website will add that person, or complain that they don't exist.
 * Add a button to delete the board.
 
 ### Phase III: Cards (finally!)
