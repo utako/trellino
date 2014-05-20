@@ -49,7 +49,7 @@ Make the show, index, and new page for boards. Next, add lists to the boards. Th
 * The whole fun of Trello is the dragging and dropping of the to-do items and lists. We'll be using jQuery UI Sortable to accomplish this. [Read this example here](http://stackoverflow.com/a/15635201).
 * First get that working on the client, and then send the result back to the server.
 * To make it prettier, you can give the cards a `.dragged` CSS style which rotates them slightly and gives them a shadow while they're being dragged.
-* While we're making things pretty, change your forms so that if you enter invalid input, for example by not giving a card a name before creating it, the input element flashes. Use the jQuery UI [Highlight effect](https://api.jqueryui.com/highlight-effect/) for this.
+* While we're making things pretty, change your forms so that if you enter invalid input, for example by not giving a card a name before creating it, the input element flashes. Use the Bootstrap [form validation states](http://getbootstrap.com/css/#forms-control-validation) for this. 
 * Also, go back to your Board show page. We want to make it harder to delete your board by accident. So when you click the 'delete' button, a [modal](http://getbootstrap.com/javascript/#modals) should pop down asking if you're sure you want to delete the board. Make this modal by displaying two divs:
   * The first div is to grey out the rest of the window. Just make it have a fixed height and width of 100%, and give it a semitransparent black color.
   * On top of that div, make a centered div which has a button to confirm the deletion of the board.
